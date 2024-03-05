@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Pago Movil | App</title>
+</head>
+<body>
+    <main>
+        <form id="pago-form">
+            <div>
+                <h1>Pagar</h1>
+            </div>
+            <div>
+                <a href="./qr.html">Leer codigo QR</a>
+            </div>
+            <div>
+                <div>
+                    <label for="operacion">Operacion</label>
+                    <select id="operacion" name="operacion">
+                        <option value="Personas">Personas</option>
+                        <option value="Comercios">Comercios</option>
+                        <option value="Comunas">Comunas</option>
+                    </select>
+                    <p id="operacion-error"></p>
+                </div>
+                <div>
+                    <label for="documento">Documento</label>
+                    <input id="documento" name="documento" placeholder="documento" type="number">
+                    <p id="documento-error"></p>
+                </div>
+                <div>
+                    <label for="banco">Banco</label>
+                    <input id="banco" name="banco" placeholder="Banco" type="number">
+                    <p id="banco-error"></p>
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input id="telefono" name="telefono" type="number">
+                    <p id="telefono-error"></p>
+                </div>
+                <div>
+                    <label for="monto">Monto</label>
+                    <input id="monto" name="monto" type="number">
+                    <p id="monto-error"></p>
+                </div>
+                <div>
+                    <label for="concepto">Concepto</label>
+                    <input id="concepto" name="concepto" type="text">
+                    <p id="concepto-error"></p>
+                </div>
+                <div>
+                    <button type="submit">Pagar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="./js/pago.js"></script>
+</body>
+</html>
